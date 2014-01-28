@@ -319,11 +319,6 @@ by hitting F4 over the component name in expressions like `Yii::app()->request`,
 for your WebApplication class assigning proper class names to the component IDs. It increases human-readability, too.
 
 ====
-
-> [![Clevertech](http://clevertech.biz/images/slir/w54-h36-c54:36/images/site/index/home/clevertech-logo.png)](http://www.clevertech.biz)    
-well-built beautifully designed web applications  
-[www.clevertech.biz](http://www.clevertech.biz)
-
 [yii]: http://www.yiiframework.com/
 [yii-default-structure]: http://www.yiiframework.com/doc/guide/1.1/en/basics.convention#directory
 [yiiboilerplate]: https://github.com/clevertech/YiiBoilerplate
