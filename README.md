@@ -17,6 +17,7 @@ Based on the Clevertech YiiBoilerplate
 
         git clone git@github.com:itcommunitypoltava/website.git <yourprojectname>
 or
+
         git clone https://<your username>:<your password>@github.com/itcommunitypoltava/website.git <yourprojectname>
        
 5. Inside cloned directory run and wait for complete:
