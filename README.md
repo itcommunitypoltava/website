@@ -13,7 +13,7 @@
 2. Install [Vagrant][vagrant]
 3. Install [Virtualbox][virtualbox]
 4. If you have PHP 5.4+ installed already ([and you should have, because it's awesome][php-5.4-changelog]), you've just installed all prequisites for community website.
-5. Now just clone the YiiBoilerplate repo:
+5. Now just clone the community website repo:
 
         git clone git@github.com:itcommunitypoltava/website.git <yourprojectname>
         
