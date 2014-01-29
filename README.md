@@ -14,12 +14,12 @@
 3. Install [Virtualbox][virtualbox]
 4. Now just clone the community website repo:
 
-    git clone git@github.com:itcommunitypoltava/website.git <yourprojectname>
+    `git clone git@github.com:itcommunitypoltava/website.git <yourprojectname>`
     
     or
     
-    git clone https://<your username>:<your password>@github.com/itcommunitypoltava/website.git <yourprojectname>
-        
+    `git clone https://<your username>:<your password>@github.com/itcommunitypoltava/website.git <yourprojectname>`
+    
 5. Inside cloned directory run and wait for complete:
 
         vagrant up
