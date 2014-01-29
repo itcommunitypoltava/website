@@ -280,7 +280,6 @@ Side note regarding phpStorm usage with Yii-based applications: if you want Yii 
 by hitting F4 over the component name in expressions like `Yii::app()->request`, you have to write `@property` doc blocks
 for your WebApplication class assigning proper class names to the component IDs. It increases human-readability, too.
 
-====
 [apigen]: http://apigen.org/
 [atdd]: http://guide.agilealliance.org/guide/atdd.html
 [behat]: http://behat.org/
