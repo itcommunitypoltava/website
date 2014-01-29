@@ -20,12 +20,12 @@ or
 
         git clone https://<your username>:<your password>@github.com/itcommunitypoltava/website.git <yourprojectname>
        
-5. Inside cloned directory run and wait for complete:
+5. Inside cloned directory run and wait for complete (it can take near hour):
 
         vagrant up
         
 6. You're done. Open up the [http://localhost:8080/](http://localhost:8080/). It's your future front user interface. Open up [http://localhost:8081/](http://localhost:8081/). It's your future admin user interface. You can start working.
-    Don't forget to `vagrant halt` the virtual machine before turning off your workstation, virtualbox can fail to shut itself down in time before `kill -9` arrives.
+    Don't forget to `vagrant halt` the virtual machine before turning off your workstation, virtualbox can fail to shut itself down in time.
 
 # Manual preparations
 
