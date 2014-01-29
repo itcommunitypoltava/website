@@ -1,13 +1,6 @@
 # Poltava IT Community public website
 Based on the Clevertech YiiBoilerplate
 
-# Requirements
-
--   **PHP 5.4+**.
--   Problably, **enabled support for running PHAR archives from console** (it has to be enabled via `php.ini`).
--   *Optional*: **Java** to be able to run Selenium.
--   *Optional*: **Virtualbox** and **Vagrant** for the easiest local deploy ever.
-
 # Quickstart
 
 1. Install [Git][git] (also you can read [Git howto][githowto])
@@ -26,6 +19,13 @@ or
         
 6. You're done. Open up the [http://localhost:8080/](http://localhost:8080/). It's your future front user interface. Open up [http://localhost:8081/](http://localhost:8081/). It's your future admin user interface. You can start working.
     Don't forget to `vagrant halt` the virtual machine before turning off your workstation, virtualbox can fail to shut itself down in time.
+
+# Requirements
+
+-   **PHP 5.4+**.
+-   Problably, **enabled support for running PHAR archives from console** (it has to be enabled via `php.ini`).
+-   *Optional*: **Java** to be able to run Selenium.
+-   *Optional*: **Virtualbox** and **Vagrant** for the easiest local deploy ever.
 
 # Manual preparations
 
