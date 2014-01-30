@@ -37,7 +37,7 @@ class FrontendController extends CController
         $libraries = $publisher->publish(ROOT_DIR.'/common/packages');
 
         $registry = Yii::app()->clientScript;
-        $registry
+        /*$registry
             ->registerCssFile("{$libraries}/html5boilerplate/normalize.css")
             ->registerCssFile("{$libraries}/html5boilerplate/main.css")
             ->registerScriptFile("{$libraries}/modernizrjs/modernizr-2.6.2.min.js", CClientScript::POS_HEAD)
@@ -48,6 +48,12 @@ class FrontendController extends CController
         $frontend = $publisher->publish(ROOT_DIR.'/frontend/packages');
         $registry
             ->registerCssFile("{$frontend}/main-ui/main.css")
-            ->registerScriptFile("{$frontend}/main-ui/main.js", CClientScript::POS_END);
+            ->registerScriptFile("{$frontend}/main-ui/main.js", CClientScript::POS_END);*/
+
+        $twitterBootstrap = $publisher->publish(ROOT_DIR.'/vendor/twitter/bootstrap/dist');
+        $registry
+            ->registerCssFile("{$twitterBootstrap}/css/bootstrap.min.css")
+            ->registerCssFile("{$twitterBootstrap}/css/bootstrap-theme.min.css")
+            ->registerScriptFile("{$libraries}/js/bootstrap.min.js", CClientScript::POS_END);
     }
 }
