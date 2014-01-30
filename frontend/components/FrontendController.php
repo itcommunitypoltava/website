@@ -43,12 +43,12 @@ class FrontendController extends CController
             ->registerScriptFile("{$libraries}/modernizrjs/modernizr-2.6.2.min.js", CClientScript::POS_HEAD)
             ->registerScriptFile("{$libraries}/html5boilerplate/plugins.js", CClientScript::POS_END)
             ->registerScriptFile("{$libraries}/underscorejs/underscore-min.js", CClientScript::POS_END)
-            ->registerScriptFile("{$libraries}/backbonejs/backbone-min.js", CClientScript::POS_END);
+            ->registerScriptFile("{$libraries}/backbonejs/backbone-min.js", CClientScript::POS_END);*/
 
         $frontend = $publisher->publish(ROOT_DIR.'/frontend/packages');
         $registry
             ->registerCssFile("{$frontend}/main-ui/main.css")
-            ->registerScriptFile("{$frontend}/main-ui/main.js", CClientScript::POS_END);*/
+            ->registerScriptFile("{$frontend}/main-ui/main.js", CClientScript::POS_END);
 
         $twitterBootstrap = $publisher->publish(ROOT_DIR.'/vendor/twitter/bootstrap/dist');
         $registry
