@@ -4,7 +4,7 @@
 cd /vagrant
 
 # Firing up the Composer to install thirdparty libraries
-php composer.phar install
+COMPOSER_PROCESS_TIMEOUT=2000 php composer.phar install
 
 # Note that all binaries will be installed into `bin/` under ROOT_DIR
 # including phpunit, behat, phing and yiic

@@ -28,7 +28,8 @@
         "yiisoft/yii": "1.1.14",
         "clevertech/yii-booster": "dev-master",
         "phing/phing": "2.6.1",
-        "clio/clio": "0.1.6"
+        "clio/clio": "0.1.6",
+        "twitter/bootstrap": "3.0.3"
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.*",
