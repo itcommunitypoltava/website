@@ -54,6 +54,6 @@ class FrontendController extends CController
         $registry
             ->registerCssFile("{$twitterBootstrap}/css/bootstrap.min.css")
             ->registerCssFile("{$twitterBootstrap}/css/bootstrap-theme.min.css")
-            ->registerScriptFile("{$libraries}/js/bootstrap.min.js", CClientScript::POS_END);
+            ->registerScriptFile("{$twitterBootstrap}/js/bootstrap.min.js", CClientScript::POS_END);
     }
 }

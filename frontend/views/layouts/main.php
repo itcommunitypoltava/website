@@ -46,11 +46,7 @@
 </div>
 
 <div class="container">
-
-    <div class="starter-template">
         <?php echo $content?>
-    </div>
-
 </div><!-- /.container -->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
