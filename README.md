@@ -173,7 +173,8 @@ You are encouraged to read through them yourself, they're not so hard to compreh
 
 ## Composer
 
-All 3rd-party components of YiiBoilerplate, including Yii itself, are managed by the [Composer][composer].
+[Composer][composer] is a tool for dependency management in PHP. It allows you to declare the dependent libraries your project needs and it will install them in your project for you.
+All 3rd-party components of current website, including Yii itself, are managed by the Composer.
 You get [Behat][behat]+[Mink][mink]+[MinkExtension][mink-extension], [PHPUnit][phpunit], full stack of [PHP Quality Assurance toolchain][phpqatools], [Phing][phing], [ApiGen][apigen], [Yii][yii] and [YiiBooster][yii-booster] as your dependencies. Even [Selenium][selenium] was packaged into Composer so it's being installed, too.
 
 Using Composer greatly reduces the size of your application codebase checked into the repository.
