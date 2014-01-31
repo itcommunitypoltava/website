@@ -16,7 +16,8 @@ return [
         'db' => [
             'schemaCachingDuration' => PRODUCTION_MODE ? 86400000 : 0, // 86400000 == 60*60*24*1000 seconds == 1000 days
             'enableParamLogging' => !PRODUCTION_MODE,
-            'charset' => 'utf8'
+            'charset' => 'utf8',
+            'tablePrefix' => 'tbl_',
         ],
         'urlManager' => [
             'urlFormat' => 'path',
