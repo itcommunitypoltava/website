@@ -3,11 +3,16 @@
  * This is the model class for table "{{user}}".
  *
  * The followings are the available columns in table '{{user}}':
+ * The followings are the available columns in table '{{user}}':
  * @property integer $id
  * @property string $password
  * @property string $salt
  * @property string $email
  * @property string $username
+ * @property string $firstname
+ * @property string $secondname
+ * @property string $lastname
+ * @property string $phone
  * @property string $login_ip
  * @property integer $login_attempts
  * @property integer $login_time
@@ -20,6 +25,8 @@
  * @property integer $update_time
  * @property integer $delete_id
  * @property integer $delete_time
+ * @property string $create_ip
+ * @property integer $type
  * @property integer $status
  *
  * @method bool verifyPassword
@@ -28,11 +35,26 @@
  */
 class User extends CActiveRecord
 {
+    /**
+     * @var string attribute used for new passwords on user's edition
+     */
+    public $newUsername;
+
 	/** @var string Field to hold a new password when user updates it. */
 	public $newPassword;
 
 	/** @var string Password confirmation. Is used only in validation on login. */
 	public $passwordConfirm;
+
+    /**
+     * @var integer attribute used to set anonymous profile or public
+     */
+    public $profileType;
+
+    /**
+     * @var integer attribute used to get max column id and generate username based on it
+     */
+    public $maxColumn;
 
 	/**
      * Name of the database table associated with this ActiveRecord
@@ -112,6 +134,15 @@ class User extends CActiveRecord
 			'email' => Yii::t('labels', 'Email'),
 		);
 	}
+
+    /**
+     * Helper property function
+     * @return string the full name of the customer
+     */
+    public function getFullName()
+    {
+        return $this->username;
+    }
 
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.

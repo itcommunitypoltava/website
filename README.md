@@ -56,7 +56,9 @@ It'll be sufficient for you to get an idea about the state of your codebase.
 Of course to generate code coverage reports this reporter has to run all unit tests, too, so you get regression testing as a side effect, assuming that your unit tests are really fast.
 
 # Overview
-YiiBoilerplate was designed for medium-sized Yii-based web applications of any kind.
+YiiBoilerplate architecture suggests that `admin interface` and `user interface` projects implemented as a separate applications with its own settings.
+Applications are located respectively in the folders `backend` and `frontend`.
+Common settings, models and components for `backend` and `frontend` can be stored in one place - `common` foler.
 It has a harness to support two-tier test-first development, with [Behat][behat] for end-to-end acceptance tests and [PHPUnit][phpunit] for both pure unit tests and integration tests.
 
 You can read the whole "table of contents" for the various directories of the YiiBoilerplate in `README.md` files inside that directories.
