@@ -25,7 +25,7 @@ do
 done
 
 # Setting up two hosts for apache (port-based virtual hosts)
-cp -f /vagrant/carcass/vagrant/{frontend,backend}.apache2.conf /etc/apache2/sites-enabled/
+cp -f /vagrant/carcass/vagrant/{frontend,backend,phpmyadmin}.apache2.conf /etc/apache2/sites-enabled/
 /etc/init.d/apache2 restart
 
 # Making the config for our application
@@ -35,4 +35,3 @@ cp -f {carcass/vagrant,common/config/overrides}/local.php
 bin/yiic migrate --interactive=0
 
 echo "Bootstrap script has been ended";
-
