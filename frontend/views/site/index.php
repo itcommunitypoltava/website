@@ -4,7 +4,8 @@
  *
  * @var FrontendSiteController $this
  */
-?>
+$this->pageTitle=Yii::app()->name;?>
+
 <h1>Hello <?php echo Yii::app()->user->name;?></h1>
 
 <p>

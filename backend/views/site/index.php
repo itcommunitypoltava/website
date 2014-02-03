@@ -1,5 +1,7 @@
 <?php
 /**
+ * Admin landing page view file
+ *
  * @var BackendSiteController $this
  */
 $this->pageTitle=Yii::app()->name; ?>
