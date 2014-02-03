@@ -24,6 +24,12 @@ debconf-set-selections <<< "mysql-server mysql-server/root_password_again passwo
 # Getting updated list of packages
 apt-get update
 
+# Installing phpmyadmin
+sudo apt-get install phpmyadmin
+
+# Getting updated list of packages
+apt-get update
+
 # Installing software
 # `apache php5` is obvious
 # `vim mysql-client` is for ease of using the VM through `vagrant ssh`
