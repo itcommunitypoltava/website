@@ -36,5 +36,6 @@
 <!-- CONTENT WRAPPER END -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://code.jquery.com/jquery.js"></script>
+<script src="/js/scripts.js"></script>
 </body>
 </html>

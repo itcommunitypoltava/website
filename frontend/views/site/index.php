@@ -12,7 +12,7 @@ $this->pageTitle=Yii::app()->name;?>
     This is the public side ("frontend") of your application.
     Everything related to it is contained inside <code>/frontend</code> subdirectory.
     You can treat this directory as a <code>/protected</code> subdirectory equivalent.
-    Frontend is crystal clear HTML5 Boilerplate.
+    Frontend is a Twitter bootstrap 3 template.
     It's expected that you are going to write your own 100% custom design anyway.
 </p>
 
