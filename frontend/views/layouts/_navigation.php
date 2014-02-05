@@ -18,7 +18,7 @@
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="<?=Yii::app()->baseUrl;?>">Home</a></li>
+                <li><a href="/site/index">Home</a></li>
                 <li><a href="/site/register">Register</a></li>
                 <li><a href="/site/login">Login</a></li>
             </ul>
