@@ -19,8 +19,8 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="/site/index">Home</a></li>
-                <li><a href="/user/create">Register</a></li>
-                <li><a href="/site/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/login">Login</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
