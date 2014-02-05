@@ -8,11 +8,11 @@ $(function () {
 
 function setNavigation() {
     var path = window.location.pathname;
-    alert(path);
+    //alert(path);
     path = path.replace(/\/$/, "");
-    alert(path);
+    //alert(path);
     path = decodeURIComponent(path);
-    alert(path);
+    //alert(path);
 
     $(".navbar-nav a").each(function () {
     var href = $(this).attr('href');
