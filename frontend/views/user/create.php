@@ -6,20 +6,6 @@
  * Time: 3:59 PM
  */
 ?>
-<style>
-    .colorgraph {
-        height: 5px;
-        border-top: 0;
-        background: #222;
-        border-color: #080808;
-        border-radius: 5px;
-        background-image: -webkit-linear-gradient( bottom,#3c3c3c 0,#222 100%);
-        background-image: -moz-linear-gradient(bottom,#3c3c3c 0,#222 100%);
-        background-image: -o-linear-gradient(bottom,#3c3c3c 0,#222 100%);
-        background-image: linear-gradient(to bottom,#3c3c3c 0,#222 100%);
-
-    }
-</style>
 <div class="container">
 
     <div class="row">
