@@ -16,24 +16,45 @@ $this->pageTitle=Yii::app()->name;?>
     It's expected that you are going to write your own 100% custom design anyway.
 </p>
 
-<p>Points of interest:</p>
+<div class="row">
+    <div id="MainPageSkills" class="col-lg-6 text-center" title="Bubbles of skills"></div>
+    <div class="col-lg-6">
+        <p>Points of interest:</p>
 
-<ul>
-    <li>
-        <p>
-            <code>/backend/components/FrontendController.php</code> is the base for all frontend controllers.
-            It registers all required styles and scripts for common frontend UI.
-        </p>
-    </li>
-    <li>
-        <p>Layout is <code>/frontend/views/layouts/main.php</code>.</p>
-    </li>
-    <li>
-        <p>
-            Note that in this layout there is the Google Analytics code already inserted as a widget.
-            Just provide your GA ID in the <code>['params']['google.analytics.id']</code> section of a config,
-            by specifying it in the <code>/frontend/config/environments/prod.php</code>, for example.
-        </p>
-    </li>
-</ul>
+        <ul>
+            <li>
+                <p>
+                    <code>/backend/components/FrontendController.php</code> is the base for all frontend controllers.
+                    It registers all required styles and scripts for common frontend UI.
+                </p>
+            </li>
+            <li>
+                <p>Layout is <code>/frontend/views/layouts/main.php</code>.</p>
+            </li>
+            <li>
+                <p>
+                    Note that in this layout there is the Google Analytics code already inserted as a widget.
+                    Just provide your GA ID in the <code>['params']['google.analytics.id']</code> section of a config,
+                    by specifying it in the <code>/frontend/config/environments/prod.php</code>, for example.
+                </p>
+            </li>
+        </ul>
+    </div>
+</div>
 
+
+<script type="text/javascript">
+    // show bubbles
+    $(document).ready(function() {
+        // TODO load tags from JSON file
+        $.getJSON("/js/tags.json", function(tags) {
+            //var tags = {"PHP": 3, "HTML": 5, "Java": 2,"OOP": 4, "Joomla": 1, "Git": 2,"Agile": 2, "Windows": 7, "WordPress": 3, "Yii": 1, "Linux": 2, "Photoshop": 3};
+            showBubbleChart({
+                "place": "div#MainPageSkills",
+                "jsonFile": "/js/tag_cloud.json",
+                "diameter": 500,
+                "tags": tags
+            });
+        });
+    });
+</script>

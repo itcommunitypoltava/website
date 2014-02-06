@@ -1,0 +1,112 @@
+{"name": "flare", "children": [
+  {
+    "name": "Operating System",
+    "children": [
+      {"name": "Linux", "aliases": ["Debian", "Ubuntu", "CentOS", "RedHat"]},
+      {"name": "MS-DOS"},
+      {"name": "OS X"},
+      {"name": "UNIX"},
+      {"name": "Windows"},
+      {
+        "name": "OS for mobiles",
+        "children": [
+          {"name": "Android"},
+          {"name": "iOS"},
+          {"name": "Windows Phone"}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "languages",
+    "children": [
+      {"name": "C#"},
+      {"name": "C++"},
+      {"name": "Java"},
+      {"name": "JavaScript"},
+      {"name": "Pascal"},
+      {"name": "PHP"},
+      {"name": "Perl"},
+      {"name": "Python"},
+      {"name": "Ruby"}
+    ]
+  },
+  {
+    "name": "Web stack",
+    "children": [
+      {"name": "CSS"},
+      {"name": "HTML"},
+      {"name": "LAMP"}
+    ]
+  },
+  {
+    "name": "JavaScript frameworks",
+    "children": [
+      {"name": "AngularJS"},
+      {"name": "Backbone.js"},
+      {"name": "CoffeeScript"},
+      {"name": "Dojo"},
+      {"name": "Express.js"},
+      {"name": "Ext JS"},
+      {"name": "jQuery"},
+      {"name": "Node.js"}
+    ]
+  },
+  {
+    "name": "PHP CMS",
+    "children": [
+      {"name": "CakePHP"},
+      {"name": "Drupal"},
+      {"name": "Joomla"},
+      {"name": "Magento"},
+      {"name": "WordPress"}
+    ]
+  },
+  {
+    "name": "PHP frameworks",
+    "children": [
+      {"name": "Symphony"},
+      {"name": "Yii"},
+      {"name": "Zend"}
+    ]
+  },
+  {
+    "name": "Version Control",
+    "children": [
+      {"name": "Git"},
+      {"name": "CVS"},
+      {"name": "SVN", "aliases": ["Subversion"]},
+      {"name": "Mercurial"}
+   ]
+  },
+  {
+    "name": "Databases",
+    "children": [
+      {
+        "name": "SQL",
+        "children": [
+          {"name": "MySQL"},
+          {"name": "PostgreSQL"},
+          {"name": "Microsoft SQL Server"},
+          {"name": "Oracle"},
+          {"name": "SQLite"}
+        ]
+      },
+      {
+        "name": "noSQL",
+        "children": [
+          {"name": "Memcached"},
+          {"name": "MongoDB"},
+          {"name": "Redis"},
+          {"name": "CouchDB"}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Quality Assurance",
+    "children": [
+      {"name": "Selenium"}
+    ]
+  }
+]}

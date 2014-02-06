@@ -17,3 +17,13 @@ body {
     background-image: linear-gradient(to bottom,#3c3c3c 0,#222 100%);
 
 }
+
+/* Bubbles styles BEGIN */
+text {
+    font: 10px sans-serif;
+    cursor: pointer;
+}
+circle {
+    cursor: pointer;
+}
+/* Bubbles styles END */
