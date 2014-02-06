@@ -24,6 +24,13 @@ class FrontendController extends CController
         return $result;
     }
 
+    public function beforeAction($action)
+    {
+        CHtml::$errorCss = '';
+        //CHtml::$errorSummaryCss = 'error';
+        return true;
+    }
+
     private function addGoogleAnalyticsCode()
     {
         $gaid = @Yii::app()->params['google.analytics.id'];

@@ -56,6 +56,11 @@ class User extends CActiveRecord
      */
     public $maxColumn;
 
+    /**
+     * @var integer attribute used to determine if user select license agreement checkbox
+     */
+    public $agree;
+
 	/**
      * Name of the database table associated with this ActiveRecord
      *
@@ -79,7 +84,7 @@ class User extends CActiveRecord
 	public function behaviors()
 	{
 		Yii::import('common.extensions.behaviors.password.*');
-		return array(
+		return [
 			// Password behavior strategy
 			"APasswordBehavior" => array(
 				"class" => "APasswordBehavior",
@@ -92,7 +97,7 @@ class User extends CActiveRecord
 					)
 				),
 			)
-		);
+		];
 	}
 
 	/**
@@ -103,19 +108,21 @@ class User extends CActiveRecord
 	 */
 	public function rules()
 	{
-		// NOTE: you should only define rules for those attributes that
-		// will receive user inputs.
-		return array(
-			array('email', 'email'),
-			array('username, email', 'unique'),
-			array('passwordConfirm', 'compare', 'compareAttribute' => 'newPassword', 'message' => Yii::t('validation', "Passwords don't match")),
-			array('newPassword, password_strategy ', 'length', 'max' => 50, 'min' => 8),
-			array('email, password, salt', 'length', 'max' => 255),
-			array('requires_new_password, login_attempts', 'numerical', 'integerOnly' => true),
+		// NOTE: you should only define rules for those attributes that will receive user inputs.
+		return [
+            ['email', 'email'],
+            ['username, email', 'unique'],
+            ['username', 'match', 'pattern' => '/^[A-Za-z0-9_]+$/u', 'message' => 'Username can contain only alphanumeric characters and underscores.'],
+            ['email, username, firstname, lastname, password, passwordConfirm', 'required', 'on' => 'create'],
+            ['agree', 'required', 'on' => 'create', 'message' => 'You must agree to the Terms and Conditions.'],
+            ['email', 'unique', 'on' => 'create', 'message' => Yii::t('user', 'This email has already been taken.')],
+            ['passwordConfirm', 'compare', 'compareAttribute' => 'password', 'on' => 'create', 'message' => Yii::t('user', 'Passwords don\'t match')],
+			['email, password, salt', 'length', 'max' => 255],
+			['requires_new_password, login_attempts', 'numerical', 'integerOnly' => true],
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, username, email', 'safe', 'on' => 'search'),
-		);
+			['id, username, email', 'safe', 'on' => 'search'],
+		];
 	}
 
 	/**
@@ -125,14 +132,14 @@ class User extends CActiveRecord
 	 */
 	public function attributeLabels()
 	{
-		return array(
+		return [
 			'id' => 'ID',
-			'username' => Yii::t('labels', 'Username'),
-			'password' => Yii::t('labels', 'Password'),
-			'newPassword' => Yii::t('labels', 'Password'),
-			'passwordConfirm' => Yii::t('labels', 'Confirm password'),
-			'email' => Yii::t('labels', 'Email'),
-		);
+			'username' => Yii::t('user', 'Username'),
+			'password' => Yii::t('user', 'Password'),
+			'newPassword' => Yii::t('user', 'Password'),
+			'passwordConfirm' => Yii::t('user', 'Confirm Password'),
+			'email' => Yii::t('user', 'E-mail'),
+		];
 	}
 
     /**

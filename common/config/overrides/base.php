@@ -3,7 +3,13 @@
  * Configuration parameters common to all entry points.
  */
 return [
+    'name' => 'IT Community',
+    // preloading 'log' component
     'preload' => ['log'],
+    // i18n settings
+    'sourceLanguage' => 'en',
+    'language' => 'en',
+    // autoloading model and component classes
     'import' => [
         'common.components.*',
         'common.models.*',
@@ -12,6 +18,7 @@ return [
         'application.components.*',
         'application.models.*'
     ],
+    // application components
     'components' => [
         'db' => [
             'schemaCachingDuration' => PRODUCTION_MODE ? 86400000 : 0, // 86400000 == 60*60*24*1000 seconds == 1000 days

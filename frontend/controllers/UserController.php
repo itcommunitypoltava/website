@@ -15,7 +15,7 @@ class UserController extends FrontendController
      */
     public function actionCreate()
     {
-        $model=new User;
+        $model=new User('create');
 
         // Uncomment the following line if AJAX validation is needed
         // $this->performAjaxValidation($model);
@@ -27,6 +27,7 @@ class UserController extends FrontendController
                 $this->redirect(array('view','id'=>$model->id));
         }
 
+        //Yii::app()->user->setFlash('success', Yii::t('user', '<strong>Congratulations!</strong> You have been successfully registered on our website! <a href="/">Go to main page.</a>'));
         $this->render('create', compact('model'));
     }
 }
