@@ -40,6 +40,7 @@ class FrontendController extends CController
 
     private function registerAssets()
     {
+        Yii::app()->clientScript->registerCoreScript('jquery');
         $publisher = Yii::app()->assetManager;
         $libraries = $publisher->publish(ROOT_DIR.'/common/packages');
 

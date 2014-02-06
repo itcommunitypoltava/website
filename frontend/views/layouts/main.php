@@ -34,7 +34,7 @@
     <!-- CONTENT END -->
 </div><!-- /.container -->
 <!-- CONTENT WRAPPER END -->
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://code.jquery.com/jquery.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="/js/bubble_chart.js"></script>
 </body>
 </html>
