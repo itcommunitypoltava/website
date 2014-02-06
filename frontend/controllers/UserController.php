@@ -24,7 +24,7 @@ class UserController extends FrontendController
         {
             $model->attributes=$_POST['User'];
             if($model->save())
-                $this->redirect(array('view','id'=>$model->id));
+                $this->redirect(array('/site/index'));
         }
 
         //Yii::app()->user->setFlash('success', Yii::t('user', '<strong>Congratulations!</strong> You have been successfully registered on our website! <a href="/">Go to main page.</a>'));

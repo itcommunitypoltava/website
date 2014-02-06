@@ -14,13 +14,11 @@ class FrontendSiteController extends FrontendController
 	 */
 	public function actions()
     {
-		return array(
-            'index' => array(
-                'class' => 'LandingPageAction'
-            ),
-            'error' => array(
-                'class' => 'SimpleErrorAction'
-            )
-		);
+		return [
+            'index' => 'LandingPageAction',
+            'error' =>  'SimpleErrorAction',
+            'login' => 'PasswordLoginAction',
+            'logout' => 'LogoutAction',
+		];
 	}
 }

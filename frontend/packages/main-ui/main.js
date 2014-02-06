@@ -18,7 +18,7 @@ function setNavigation() {
     });
 }
 
-/*===============================*/
+/* Script for pretty checkbox button on registration and login page*/
 $(function () {
     $('.button-checkbox').each(function () {
 
@@ -63,13 +63,11 @@ $(function () {
                 $button
                     .removeClass('btn-default')
                     .addClass('btn-' + color + ' active');
-                $('input[id=User_agree]').val('1');
             }
             else {
                 $button
                     .removeClass('btn-' + color + ' active')
                     .addClass('btn-default');
-                $('input[id=User_agree]').val('');
             }
         }
 
