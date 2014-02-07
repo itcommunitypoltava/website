@@ -6,7 +6,7 @@
  */
 $this->pageTitle=Yii::app()->name;?>
 
-<h1>Hello <?php echo Yii::app()->user->name;?></h1>
+<h1>Hello <?php echo Yii::app()->user->name;?>!</h1>
 
 <p>
     This is the public side ("frontend") of your application.
@@ -24,7 +24,7 @@ $this->pageTitle=Yii::app()->name;?>
         <ul>
             <li>
                 <p>
-                    <code>/backend/components/FrontendController.php</code> is the base for all frontend controllers.
+                    <code>/frontend/components/FrontendController.php</code> is the base for all frontend controllers.
                     It registers all required styles and scripts for common frontend UI.
                 </p>
             </li>
