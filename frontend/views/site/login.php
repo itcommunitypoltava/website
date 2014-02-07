@@ -28,7 +28,7 @@ $this->pageTitle = Yii::app()->name . ' - Login';
                     </div>
                 <?php  endif; ?>
                 <div class="form-group <?php if($form->error($model,'username'))echo'has-error';?>">
-                    <?= $form->textField($model, 'username',['class'=>'form-control input-lg','placeholder'=>'Email Address']); ?>
+                    <?= $form->textField($model, 'username',['class'=>'form-control input-lg','placeholder'=>'User Name']); ?>
                 </div>
                 <div class="form-group <?php if($form->error($model,'password'))echo'has-error';?>">
                     <?= $form->passwordField($model, 'password',['class'=>'form-control input-lg','placeholder'=>'Password']); ?>
