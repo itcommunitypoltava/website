@@ -18,7 +18,7 @@ class FrontendSiteController extends FrontendController
             'index' => 'LandingPageAction',
             'error' =>  'SimpleErrorAction',
             'login' => 'PasswordLoginAction',
-            'logout' => 'LogoutAction',
+            'logout' => 'UserLogoutAction',
 		];
 	}
 }

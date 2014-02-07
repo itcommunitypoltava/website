@@ -19,8 +19,13 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="/site/index">Home</a></li>
+                <?php if(Yii::app()->user->isGuest):?>
                 <li><a href="/register">Register</a></li>
                 <li><a href="/login">Login</a></li>
+                <?php endif;?>
+                <?php if(!Yii::app()->user->isGuest):?>
+                    <li><a href="/logout">Logout</a></li>
+                <?php endif;?>
             </ul>
         </div><!--/.nav-collapse -->
     </div>

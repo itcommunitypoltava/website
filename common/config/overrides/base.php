@@ -31,6 +31,10 @@ return [
             'showScriptName' => false,
             'urlSuffix' => '/',
         ],
+        'user' => [
+            // enable cookie-based authentication
+            'allowAutoLogin'=>true,
+        ],
         'cache' => extension_loaded('apc')
                 ? [
                     'class' => 'CApcCache',

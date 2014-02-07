@@ -93,7 +93,7 @@ class FrontendLoginForm extends CFormModel
         if ($this->hasErrors())
             return;
 
-        $this->_identity = new AdminIdentity($this->username, $this->password);
+        $this->_identity = new UserIdentity($this->username, $this->password);
         if ($this->_identity->authenticate())
             return;
 
@@ -124,7 +124,7 @@ class FrontendLoginForm extends CFormModel
 	public function login()
     {
 		if ($this->_identity === null) {
-			$this->_identity = new AdminIdentity($this->username, $this->password);
+			$this->_identity = new UserIdentity($this->username, $this->password);
 			$this->_identity->authenticate();
 		}
 
